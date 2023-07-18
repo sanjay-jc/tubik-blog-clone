@@ -109,9 +109,13 @@ section{
 .small-article img{
     width: 300px;
     height: 225px;
-    object-fit: cover;
-    
+    object-fit: cover;  
+    transition: 0.6s;  
 
+}
+
+.small-article:hover img{
+    transform: scale(1.1);
 }
 .small-article h3{
     font-size: 16px;
@@ -136,9 +140,16 @@ section{
 .big-article img{
     width: 100%;
     height: 100%;
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+.big-article-a:hover img{
+    transform: scale(1.1);
 }
 .big-article{
     position: relative;
+    overflow: hidden;
 }
 .big-article-info{
     position: absolute;
@@ -162,9 +173,9 @@ section{
     font-size: 11px;
     letter-spacing: 1px;
 }
-.excerpt{
+/* .excerpt{
     padding-right: 58px;
-}
+} */
 .big-article .overlay{
     position: absolute;
     top: 0px;
@@ -173,7 +184,9 @@ section{
     z-index: 2;
     width: 100%;
     height: 100%;
+    
 }
+
 
 @media (min-width: 1200px)
 {
@@ -206,19 +219,21 @@ section{
     right: 0;
     margin: 40px auto;
     color: white;
+    z-index: 2;
 
 }
 
 .item img{
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    transition: 0.6s;
 }
+
 
 
 .slick-list , .draggable{
     margin-left: -560px !important;
 }
-
 
 .back-half{
     width: 100%;
@@ -226,16 +241,25 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.6);
-    z-index: inherit;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+
+}
+
+.item:hover img{
+    transform: scale(1.1);
 }
 
 .details h3{
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 40px;
     font-size: 33px;
+    margin-bottom: 20px;
+
 }
+
+
 
 .row h1{
     font-size: 70px;
@@ -243,4 +267,103 @@ section{
     font-family: 'Gill Sans';
     margin: 90px 0px 20px 0px !important;
     text-transform: capitalize;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+
+.case-studies .item{
+    position: relative;
+    min-height: 500px;
+    padding: 38px 30px 30px 30px;
+    background-color: #F2F2F2 !important;
+    color: black !important;
+    overflow: hidden;
+}
+
+.case-studies .item img{
+    transition:0.6s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: 0.3s 
+}
+
+.case-studies .item:hover img {
+    transform: scale(1.1); /* Scaling the image to 1.1 times on hover */
+}
+
+.case-studies  h3{
+    font-size: 28px;
+}
+
+.case-studies h1{
+    margin: 90px 0px 20px 0px !important;
+}
+
+
+
+
+/* email ,subscribe section */
+
+.email{
+    align-items: center;
+}
+
+.email h2{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 120px;
+    font-family: 'Gill Sans';
+}
+
+.email p {
+    max-width: 400px;
+    text-align: center;
+}
+
+.row{
+    justify-content: center;
+}
+
+.email span{
+    font-size: 17px;
+}
+
+.form{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+input{
+    border: none;
+    width: 400px;
+    /* border-bottom: 1px solid grey; */
+    font-size: 25px;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    font-size: 28px;
+    color: black;
+}
+.form button{
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+    color: black;
+}
+ 
+.form hr{
+    margin: 5px 0px 10px 0px;
 }
