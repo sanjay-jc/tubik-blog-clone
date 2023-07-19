@@ -367,3 +367,70 @@ input::placeholder{
 .form hr{
     margin: 5px 0px 10px 0px;
 }
+/* more article section */
+
+.more-article .item{
+    overflow: hidden;
+    color: black;
+}
+
+.more-article .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s;    
+}
+
+.for-image{
+    overflow: hidden;
+    height: 260px;
+}
+
+.more-article .cat{
+    margin: 30px 0px 10px 0px ;
+    max-width: 200px;
+
+}
+
+.more-article h3{
+    font-size: 22px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.more-article .excerpt{
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 28px;
+    margin: 90px 0px 20px 0px;
+}
+
+/* big-aritcle image section */
+
+.big-image .items{
+    position: relative;
+    overflow: hidden;
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.for-images img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.items:hover img{
+    transform: scale(1.1);
+}
