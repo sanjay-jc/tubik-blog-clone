@@ -252,7 +252,6 @@ section{
 
 .details h3{
     text-transform: capitalize;
-    font-weight: 550;
     line-height: 40px;
     font-size: 33px;
     margin-bottom: 20px;
@@ -410,27 +409,169 @@ input::placeholder{
 
 /* big-aritcle image section */
 
+.big-image{
+    margin: 90px 0px 30px 0px;
+}
+/* .big-image .items{
+    position: relative;
+    width: 100%;
+    height: 553px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: black;
+} */
+
 .big-image .items{
     position: relative;
+    width: 100%;
+    height: 553px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
+    margin-bottom: 30px;
+    color: black;
 }
 
-.back{
+
+.items img{
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.4);
-    z-index: 1;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+}
+.big-image .detail{
+    max-width: 500px;
+    color: white;
+    padding-left: 60px;
+    margin-bottom: 15px;
+    z-index: 1;
 }
 
-.for-images img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
 
 .items:hover img{
     transform: scale(1.1);
+} 
+
+.back-halfs{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+/* more_cats */
+
+.more_cats{
+    margin: 70px 0px 90px 0px;
+}
+.tags{
+    margin-bottom: 10px;
+}
+.tags .cat-items{
+    color: black;
+    border: 1px solid rgb(187, 187, 187);
+    padding: 8px 14px 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: 0.6s;
+    margin: 5px;
+}
+
+.tops h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+    
+}
+.cat-title{
+    margin: 0px;
+    padding: 0px;
+}
+.cat-title p{
+    padding-left: 0px;
+    font-size: 13px;
+}
+.cat-items:hover{
+    border-radius: 10px;
+}
+/* footer */
+
+.foot{
+    width: 100%;
+    background-color: black;
+    height: 400px;
+    color: white;
+}
+
+.foot .row1600{
+    width: 1600px;
+    max-width: 94%;
+    margin: 0 auto
+}
+
+.flex-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mail-wrap{
+    display: flex;
+    gap: 80px;
+    margin-top: 70px;
+
+}
+
+.mail-wrap .footer-email{
+    font-size: 20px;
+}
+.mail-wrap .email{
+    font-size: 20px;
+    border-bottom: 1px solid grey;  
+}
+.email a {
+    color: white;
+}
+
+.pdf-section{
+    font-size: 20px;
+    color: white;
+}
+.pdf-download{
+    display: inline-block;
+}
+.pdf-download .line{
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+}
+
+.pdf-download a{
+    color: white;
+}
+
+.other-text{
+    font-size: 10px;
+    color: grey;
+}
+
+/* right-content */
+
+.column-wrapper{
+    display: flex;
+
+}
+.column1{
+    margin-right: 190px;
 }
