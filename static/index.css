@@ -568,10 +568,42 @@ input::placeholder{
 
 /* right-content */
 
-.column-wrapper{
+.right-contents{
+    max-width: 545px;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.right-contents .column-wrapper{
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.right-contents .column-wrapper .column1{
+    display: flex;
+    margin-right: 120px;
+}
+
+
+.right-contents .column-wrapper .column-2-3-wrap{
+    display: flex;
+    gap: 120px;
+}
+
+.right-contents .column-wrapper .column-2-3-wrap .column2 a{
+    color: white;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2px;
 
 }
-.column1{
-    margin-right: 190px;
+.right-contents .column-wrapper .column-2-3-wrap .column3 a{
+    color: white;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2px;
+
+
+}
+.right-contents .column-wrapper .column-2-3-wrap .link-div{
+    margin-bottom: 10px;
 }
