@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,14 +10,14 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.min.js" integrity="sha512-eHx4nbBTkIr2i0m9SANm/cczPESd0DUEcfl84JpIuutE6oDxPhXvskMR08Wmvmfx5wUpVjlWdi82G5YLvqqJdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap-grid.min.css" integrity="sha512-zDDxSlYrbKTTfup/YyljmstpX+1jwjeg15AKS/fl26gRxfpD+HMr6dfuJQzCcFtoIEjf93SuCffose5gDQOZtg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
-    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
-    <script> src = "{% static '/bootstrap/bootstrap.bundle.min.js' %}"</script>
+    <link rel="stylesheet" href="../static/bootstrap/bootstrap.min.css">
+    <script> src = "../static/bootstrap/bootstrap.bundle.min.js"</script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="./index.css">
 
 </head>
 
@@ -64,7 +63,8 @@
             </header>
         </div>
     </div>
-    <section class="category-list">
+
+    <section class=" category-list">
         <div class="container-wrap container">
             <div class="row">
                 <div class="col-12">
@@ -83,208 +83,85 @@
         </div>
 
     </section>
-    <section class="articles">
-        <div class="container">
-            <div class="col-12">
-                <div class="top">
-                    <h1>tubik blog</h1>
-                    <a href="?">view latest</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="col-lg-12">
-                        <div class="big-article aspect-width-height" style="height: 650px;">
-                            <a href="?" class="big-article-a">
-                                <div class="big-article-info">
-                                    <p class="cat">Branding</p>
-                                    <h3>Case Study: Dance Festival. Creating a Set of Event Poster Designs</h3>
-                                    <p class="excerpt">Check the project in which tubik team created a set of original
-                                        illustration poster designs for various events of a dance festival organized by a
-                                        dance school chain.</p>
-                                </div>
-                                <div class="overlay"></div>
-                                <img src="https://blog.tubikstudio.com/wp-content/uploads/2023/06/dance-festival-poster-design-contemp-tubikarts-1024x768.jpg"
-                                    alt="">
-                                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="row flex-wrapper-small-article">
-                        <div class="article-block col-6">
-                            <a href="">
-                                <div class="small-article">
-                                    <div class="small-article-image">
-                                        <img src="https://blog.tubikstudio.com/wp-content/uploads/2023/06/hotelcard-identity-redesign-by-tubik-1-1024x586.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="title-wrap">
-                                        <p class="cat">Branding</p>
-                                        <h3>Case Study: HotelCard. Brand Identity for Hotel Offers Service</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="article-block col-6">
-                            <a href="">
-                                <div class="small-article">
-                                    <div class="small-article-image">
-                                        <img src="https://blog.tubikstudio.com/wp-content/uploads/2023/06/milk-packaging-design-tubikarts-1024x768.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="title-wrap">
-                                        <p class="cat">Branding</p>
-                                        <h3>Case Study: Milkimu. Packaging and Marketing Design for Dairy Brand</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="article-block col-6">
-                            <a href="">
-                                <div class="small-article">
-                                    <div class="small-article-image">
-                                        <img src="https://blog.tubikstudio.com/wp-content/uploads/2023/05/case-study-physica-magazine-tubik-design-300x225.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="title-wrap">
-                                        <p class="cat">UI/UX</p>
-                                        <h3>Case Study: Physica Magazine. Web Design and Graphics for Scientific Blog
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="article-block col-6">
-                            <a href="">
-                                <div class="small-article">
-                                    <div class="small-article-image">
-                                        <img src="https://blog.tubikstudio.com/wp-content/uploads/2023/05/soap-brand-packaging-design-tubikarts-300x225.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="title-wrap">
-                                        <p class="cat">Branding</p>
-                                        <h3>Case Study: Soaplanet. Soap Brand Packaging Design with Travel Spirit</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <section class="blog-list container">
+        <div class="col-12 header1 ">
+            <h1>All topics</h1>
+        </div>
+
+        <div class="col-12 list1">
+            <div class="overlay1"></div>
+            <img src="https://blog.tubikstudio.com/wp-content/uploads/2018/02/graphic-design-tips-and-practices-tubik-blog-1024x768.png" alt="">
+            <div class="details1">
+                <p class="cat">BRANDING</p>
+                <h3>Case Study: Aqua Dudes. Cartoonish Packaging Design for Fish Food Brand</h3>
+                <p class="details1-info">Enjoy the vibrant packaging design with cartoonish character illustrations and various container types created as a part of the visual identity for a fish food brand.</p>
             </div>
         </div>
+        <div class="col-12 list1">
+            <div class="overlay1"></div>
+            <img src="https://blog.tubikstudio.com/wp-content/uploads/2018/02/graphic-design-tips-and-practices-tubik-blog-1024x768.png" alt="">
+            <div class="details1">
+                <p class="cat">BRANDING</p>
+                <h3>Case Study: Aqua Dudes. Cartoonish Packaging Design for Fish Food Brand</h3>
+                <p class="details1-info">Enjoy the vibrant packaging design with cartoonish character illustrations and various container types created as a part of the visual identity for a fish food brand.</p>
+            </div>
+        </div>
+        <div class="col-12 list1">
+            <div class="overlay1"></div>
+            <img src="https://blog.tubikstudio.com/wp-content/uploads/2018/02/graphic-design-tips-and-practices-tubik-blog-1024x768.png" alt="">
+            <div class="details1">
+                <p class="cat">BRANDING</p>
+                <h3>Case Study: Aqua Dudes. Cartoonish Packaging Design for Fish Food Brand</h3>
+                <p class="details1-info">Enjoy the vibrant packaging design with cartoonish character illustrations and various container types created as a part of the visual identity for a fish food brand.</p>
+            </div>
+        </div>
+
     </section>
-    <section class="popular-article">
+    <section class="more_cats">
         <div class="container">
             <div class="col-12">
-                <div class="row">
-                    <h1>Popular</h1>
+                <div class="row tops"><h2>More articles by themes</h2></div>
+                <div class="row tags">
+                    <div class="col-1">
+                        <div class="row cat-title">
+                            <p>Books</p>
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <a href="" class="cat-items" >design for business</a>
+                        <a href="" class="cat-items" >logo design</a>
+                        <a href="" class="cat-items" >problem-sloving webdesign</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="over">
-            <div class="popular-slider">
-                <a href="" >
-                    <div class="item" >
-                        <div class="back-half"></div>
-                        <div class="details">
-                            <p class="cat">UI/UX</p>
-                            <h3>web design:16 basic types of web pages</h3>
-                            <p class="excerpt">
-                                In this article, let's review basic types of web pages you can find on diverse websites around the Web. Packed with web design examples and tips. 
-
-                            </p>
+                <div class="row tags">
+                    <div class="col-1">
+                        <div class="cat-title">
+                            <p>Design</p>
                         </div>
-                        <img width="1024" height='768' src="https://img.freepik.com/free-vector/design-team-concept-illustration_114360-6661.jpg?w=1380&t=st=1689609228~exp=1689609828~hmac=92ef4f06661b7f3f66c03332d4978e5dbc4ec3918b61f97be23dd0efccfce338" 
-                        alt="">
                     </div>
-                </a>
-                <a href="" >
-                    <div class="item" >
-                        <div class="back-half"></div>
-                        <div class="details">
-                            <p class="cat">PROCESSES AND TOOLS</p>
-                            <h3>web design:16 basic types of web pages</h3>
-                            <p class="excerpt">
-                                In this article, let's review basic types of web pages you can find on diverse websites around the Web. Packed with web design examples and tips. 
-
-                            </p>
+                    <div class="col-11">
+                        <a href="" class="cat-items">user interface</a>
+                        <a href="" class="cat-items">user experience</a>
+                        <a href="" class="cat-items">problem-sloving webdesign</a>
+                        <a href="" class="cat-items">UI/UX</a>
+                </div>
+                </div>
+                <div class="row tags">
+                    <div class="col-1">
+                        <div class="cat-title">
+                            <p>Apps</p>
                         </div>
-                        <img width="1024" height='768' src="https://img.freepik.com/free-vector/flat-creativity-concept-illustration_52683-64279.jpg?w=826&t=st=1689609297~exp=1689609897~hmac=20198cc93c307fb6702a3144db7ac2fd50835304c577cf2164f1b2a2831b0993" 
-                        alt="">
                     </div>
-                </a>
-                <a href="" >
-                    <div class="item" >
-                        <div class="back-half"></div>
-                        <div class="details">
-                            <p class="cat">PROCESSES AND TOOLS</p>
-                            <h3>web design:16 basic types of web pages</h3>
-                            <p class="excerpt">
-                                In this article, let's review basic types of web pages you can find on diverse websites around the Web. Packed with web design examples and tips. 
-
-                            </p>
-                        </div>
-                        <img width="1024" height='768' src="https://img.freepik.com/premium-vector/hand-drawn-people-working-together-illustration_52683-76157.jpg?w=1380" 
-                        alt="">
+                    <div class="col-11">
+                        <a href="" class="cat-items">app design</a>
+                        <a href="" class="cat-items">usablity</a>
+                        <a href="" class="cat-items">mobile app</a>
+                        <a href="" class="cat-items">animation</a>
+                        <a href="" class="cat-items">case study</a>
+                        <a href="" class="cat-items">mobile design inspriation</a>
                     </div>
-                </a>
-                <a href="">
-                    <div class="item" >
-                        <div class="back-half"></div>
-                        <div class="details">
-                            <p class="cat">PROCESSES AND TOOLS</p>
-                            <h3>web design:16 basic types of web pages</h3>
-                            <p class="excerpt">
-                                In this article, let's review basic types of web pages you can find on diverse websites around the Web. Packed with web design examples and tips. 
-
-                            </p>
-                        </div>
-                        <img width="1024" height='768' src="https://img.freepik.com/free-vector/creative-team-concept-illustration_114360-6488.jpg?w=1380&t=st=1689608271~exp=1689608871~hmac=b5b39fd2638c60ceb7ea486b220b1335a86461cfd3c8630167489b7c2d077048" 
-                        alt="">
-                    </div>
-                </a>
+                </div>
                 
-            </div>
-        </div>
-    </section>
-    <section class="case-studies">
-        <div class="container">
-            <div class="col-12">
-                <div class="top">
-                    <h1>Case studies</h1>
-                    <a>view all</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <a href="">
-                        <div class="item">
-                            <p class="cat">branding</p>
-                            <h3>Case Study: Dance Festival. Creating a Set of Event Poster Designs</h3>
-                            <img src="https://img.freepik.com/free-vector/think-outside-box-concept-illustration_114360-15734.jpg?size=626&ext=jpg&ga=GA1.1.1164846836.1689608059&semt=sph" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="">
-                        <div class="item">
-                            <p class="cat">branding</p>
-                            <h3>Case Study: Dance Festival. Creating a Set of Event Poster Designs</h3>
-                            <img src="https://img.freepik.com/free-vector/graphic-design-teamwork-concept_23-2148125246.jpg?size=626&ext=jpg&ga=GA1.1.1164846836.1689608059&semt=ais" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="">
-                        <div class="item">
-                            <p class="cat">branding</p>
-                            <h3>Case Study: Dance Festival. Creating a Set of Event Poster Designs</h3>
-                            <img src="https://img.freepik.com/free-vector/designer-girl-concept-illustration_114360-4455.jpg?size=626&ext=jpg&ga=GA1.1.1164846836.1689608059&semt=ais" alt="">
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
     </section>
@@ -356,73 +233,8 @@
             </div>
         </div>
     </section>
-    <section class="big-image">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <a href="">
-                    <div class="items">
-                        <div class="back-halfs"></div>
-                        <img src="https://blog.tubikstudio.com/wp-content/uploads/2018/02/graphic-design-tips-and-practices-tubik-blog-1024x768.png" alt="">
-                        <div class="detail">
-                            <p class="cat">ILLUSTRATIONS</p>
-                            <h3>How to Create Original Flat Illustrations: Designer’s Tips</h3>
-                            <p class="excerpt">The article shares helpful tips from Tubik graphic designer about creating original flat illustrations and best practices on developing artistic style and manner.</p>
-                        </div>
-                </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="more_cats">
-        <div class="container">
-            <div class="col-12">
-                <div class="row tops"><h2>More articles by themes</h2></div>
-                <div class="row tags">
-                    <div class="col-1">
-                        <div class="row cat-title">
-                            <p>Books</p>
-                        </div>
-                    </div>
-                    <div class="col-11">
-                        <a href="" class="cat-items" >design for business</a>
-                        <a href="" class="cat-items" >logo design</a>
-                        <a href="" class="cat-items" >problem-sloving webdesign</a>
-                    </div>
-                </div>
-                <div class="row tags">
-                    <div class="col-1">
-                        <div class="cat-title">
-                            <p>Design</p>
-                        </div>
-                    </div>
-                    <div class="col-11">
-                        <a href="" class="cat-items">user interface</a>
-                        <a href="" class="cat-items">user experience</a>
-                        <a href="" class="cat-items">problem-sloving webdesign</a>
-                        <a href="" class="cat-items">UI/UX</a>
-                </div>
-                </div>
-                <div class="row tags">
-                    <div class="col-1">
-                        <div class="cat-title">
-                            <p>Apps</p>
-                        </div>
-                    </div>
-                    <div class="col-11">
-                        <a href="" class="cat-items">app design</a>
-                        <a href="" class="cat-items">usablity</a>
-                        <a href="" class="cat-items">mobile app</a>
-                        <a href="" class="cat-items">animation</a>
-                        <a href="" class="cat-items">case study</a>
-                        <a href="" class="cat-items">mobile design inspriation</a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+
+   
     <footer class="foot">
         <div class="container row1600">
             <div class="flex-wrapper">
@@ -524,9 +336,6 @@
                 variableWidth:true,
                 centerMode:true,
                 // autoplay:true
-
-
-
             });
         });
     </script>
