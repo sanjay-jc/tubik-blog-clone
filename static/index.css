@@ -8,6 +8,13 @@ section{
     position: relative;
     z-index: 99;
 }
+
+a{
+    color: black;
+}
+
+/* homepage  css style start */
+
 .header-blog{
     display: flex;
     align-items: center;
@@ -90,7 +97,7 @@ section{
     margin-bottom: 67px !important;
 }
 
-.category-list li:hover{
+.category-list li a:hover{
     transition: 0.25s;
     color: #4C32FF;
     
@@ -614,3 +621,57 @@ input::placeholder{
 .right-contents .column-wrapper .column-2-3-wrap .link-div{
     margin-bottom: 10px;
 }
+/* homepage  css style end */
+
+
+/* category list css style start */
+.header1 h1{
+    font-family: "Gill Sans";
+    font-size: 70px;
+}
+
+.blog-list .list1{
+    max-height: 550px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+   
+    
+}
+
+.list1 img{
+    object-fit: cover;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.details1{
+    position: absolute;
+    max-width: 425px;
+    top: 25%;
+    left: 5%;
+    color: white;
+    z-index: 2;
+
+}
+.details1 h3{
+    font-size: 33px;
+}
+
+.details1-info{
+    font-size: 17px;
+}
+.overlay1{
+    position: absolute;
+    outline: 1px solid red;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.list1:hover img{
+    transform: scale(1.05);
+}
+
+/* category list css style end */
